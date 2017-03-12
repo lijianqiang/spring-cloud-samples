@@ -11,14 +11,13 @@ import com.springcloud.zuul.filter.AccessZuulFilter;
 @SpringCloudApplication
 public class ZuulGatewayDemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ZuulGatewayDemoApplication.class, args);
-	}
-	
-	@Bean
-	public AccessZuulFilter accessFilter() {
-	    return new AccessZuulFilter();
-	}
-	
-	
+    public static void main(String[] args) {
+        SpringApplication.run(ZuulGatewayDemoApplication.class, args);
+    }
+
+    @Bean
+    public AccessZuulFilter accessFilter() {
+        return new AccessZuulFilter();
+    }
+
 }
